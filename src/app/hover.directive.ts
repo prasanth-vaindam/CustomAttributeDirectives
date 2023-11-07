@@ -7,16 +7,14 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: '[appHostbindingexample]',
+  selector: '[appHover]',
 })
-export class HostbindingexampleDirective {
+export class HoverDirective {
   constructor(private element: ElementRef, private render: Renderer2) {}
 
-  @HostBinding('style.backgroundColor') background1: string = 'blue';
-  @HostBinding('style.transition') trans: string = '0.5s';
-  @HostBinding('style.margin') margin: string = '10px 20px';
+  @HostBinding('style.backgroundColor') background1: string = 'violet';
 
-  @HostListener('mouseenter') mouseenter11() {
+  @HostListener('mouseenter') mouseenter1() {
     this.render.setStyle(this.element.nativeElement, 'backgroundColor', 'Red');
     this.render.setStyle(this.element.nativeElement, 'margin', '10px 20px');
     this.render.setStyle(this.element.nativeElement, 'padding', '10px 20px');
