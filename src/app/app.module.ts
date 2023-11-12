@@ -7,6 +7,7 @@ import { SetBackgroundDirective } from './set-background.directive';
 import { ApphoverDirective } from './Directives/apphover.directive';
 import { HostbindingexampleDirective } from './Directives/hostbindingexample.directive';
 import { HoverDirective } from './hover.directive';
+import { ApplyclassDirective } from './applyclass.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HoverDirective } from './hover.directive';
     ApphoverDirective,
     HostbindingexampleDirective,
     HoverDirective,
+    ApplyclassDirective,
   ],
   imports: [BrowserModule],
   providers: [],

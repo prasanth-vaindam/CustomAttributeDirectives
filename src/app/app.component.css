@@ -1,1 +1,7 @@
-
+.class1 {
+  border: 2px solid black;
+}
+.class2 {
+  margin: 500px;
+  color: aqua;
+}
